@@ -68,6 +68,12 @@ namespace Uppgift2
             {
                 Console.WriteLine(String.Format("Take the {0} to {1} from plattform {2} at {3}", t.GetType().Name, t.Route, t.Platform, t.Departure));
             }
+			Console.WriteLine("Resan hem");
+			foreach (ITransportation t in travel.Home.Transportations)
+			{
+				Console.WriteLine(String.Format("Take the {0} to {1} from plattform {2} at {3}", t.GetType().Name, t.Route, t.Platform, t.Departure));
+			}
+            Console.ReadLine();
         }
     }
 }
